@@ -4,7 +4,7 @@
 extents = Vector3( 20, 0.5, 20 )
 
 [sub_resource type="SpatialMaterial" id=3]
-albedo_color = Color( 0.35695, 0.59, 0.1239, 1 )
+albedo_color = Color( 0.24576, 0.48, 0.1872, 1 )
 
 [sub_resource type="QuadMesh" id=2]
 material = SubResource( 3 )

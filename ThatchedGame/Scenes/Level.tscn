@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Assets/PlayerCharacter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/PlayerCharacter.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/colliderSquareBig.tscn" type="PackedScene" id=2]
 [ext_resource path="res://default_env.tres" type="Environment" id=3]
 
@@ -33,3 +33,6 @@ directional_shadow_split_3 = 0.3
 directional_shadow_blend_splits = true
 directional_shadow_normal_bias = 1.0
 directional_shadow_bias_split_scale = 0.188
+
+[editable path="KinematicBody"]
+[editable path="KinematicBody/thatchedTent"]

@@ -8,7 +8,7 @@ var _velocity := Vector3.ZERO
 var _snap_vector := Vector3.DOWN
 
 onready var _spring_arm: SpringArm = $SpringArm
-onready var _model: Spatial = $CharacterModel
+onready var _model: Spatial = $thatchedTent
 
 func _physics_process(delta: float) -> void:
 	var move_direction := Vector3.ZERO

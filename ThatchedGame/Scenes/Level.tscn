@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/PlayerCharacter.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/colliderSquareBig.tscn" type="PackedScene" id=2]
 [ext_resource path="res://default_env.tres" type="Environment" id=3]
 [ext_resource path="res://assets/pickupItem.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/landBlock.tscn" type="PackedScene" id=5]
 
 [node name="Spatial" type="Spatial"]
 
@@ -12,12 +13,7 @@
 [node name="StaticBody" type="StaticBody" parent="."]
 
 [node name="collSquare" parent="StaticBody" instance=ExtResource( 2 )]
-
-[node name="collSquare1" parent="StaticBody" instance=ExtResource( 2 )]
-transform = Transform( 0.583975, -0.216459, -0.78238, 0.347558, 0.937659, 0, 0.733605, -0.271922, 0.622801, 24.2076, 2.70367, 20.3877 )
-
-[node name="collSquare2" parent="StaticBody" instance=ExtResource( 2 )]
-transform = Transform( 0.797987, -0.138152, -0.586627, 0.170588, 0.985342, 0, 0.578028, -0.100071, 0.809857, 2.48463, -0.5, 25.42 )
+transform = Transform( 20, 0, 0, 0, 1, 0, 0, 0, 20, 0, -0.5, 0 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 3 )
@@ -37,3 +33,87 @@ directional_shadow_bias_split_scale = 0.188
 
 [node name="Pickup" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 7, 31 )
+
+[node name="landblocksmooth" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.238, 0, 9.945 )
+
+[node name="landblocksmooth2" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1.75, 0, 0, 0, 2.25, 0, 0, 0, 2.219, 11.259, 0, 7.5 )
+
+[node name="landblocksmooth3" parent="." instance=ExtResource( 5 )]
+transform = Transform( 5, 0, 0, 0, 4.5, 0, 0, 0, 5, 18, 0, -8 )
+
+[node name="landblocksmooth26" parent="." instance=ExtResource( 5 )]
+transform = Transform( 5, 0, 0, 0, 4.5, 0, 0, 0, 5, -22, 0, -8 )
+
+[node name="landblocksmooth27" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1.2, 0, 0, 0, 10.3, 0, 0, 0, 1.2, -22, 0, -22.2313 )
+
+[node name="landblocksmooth28" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 16, 0, 0, 0, 1, -28.9648, 0, -22.2313 )
+
+[node name="landblocksmooth4" parent="." instance=ExtResource( 5 )]
+transform = Transform( 5, 0, 0, 0, 6.75, 0, 0, 0, 10, 37.678, 0, 0 )
+
+[node name="landblocksmooth5" parent="." instance=ExtResource( 5 )]
+transform = Transform( 5, 0, 0, 0, 18, 0, 0, 0, 10, 59, 0, 1 )
+
+[node name="landblocksmooth6" parent="." instance=ExtResource( 5 )]
+transform = Transform( 5, 0, 0, 0, 18, 0, 0, 0, 10, 59, 0, 38 )
+
+[node name="landblocksmooth7" parent="." instance=ExtResource( 5 )]
+transform = Transform( 5, 0, 0, 0, 18, 0, 0, 0, 10, 59, 0, 74 )
+
+[node name="landblocksmooth8" parent="." instance=ExtResource( 5 )]
+transform = Transform( 10, 0, 0, 0, 18, 0, 0, 0, 5, 31, 0, 84 )
+
+[node name="landblocksmooth11" parent="." instance=ExtResource( 5 )]
+transform = Transform( 5, 0, 0, 0, 18, 0, 0, 0, 10, -71, 0, 94 )
+
+[node name="landblocksmooth12" parent="." instance=ExtResource( 5 )]
+transform = Transform( 5, 0, 0, 0, 18, 0, 0, 0, 10, -71, 0, 130 )
+
+[node name="landblocksmooth13" parent="." instance=ExtResource( 5 )]
+transform = Transform( 10, 0, 0, 0, 18, 0, 0, 0, 5, -99, 0, 140 )
+
+[node name="landblocksmooth14" parent="." instance=ExtResource( 5 )]
+transform = Transform( -5, 0, -8.74228e-07, 0, 18, 0, 4.37114e-07, 0, -10, -127, 0, 93 )
+
+[node name="landblocksmooth17" parent="." instance=ExtResource( 5 )]
+transform = Transform( -5, 0, -8.74228e-07, 0, 18, 0, 4.37114e-07, 0, -10, -127, 0, 130 )
+
+[node name="landblocksmooth15" parent="." instance=ExtResource( 5 )]
+transform = Transform( -5, 0, -8.74228e-07, 0, 18, 0, 4.37114e-07, 0, -10, -127, 0, 57 )
+
+[node name="landblocksmooth16" parent="." instance=ExtResource( 5 )]
+transform = Transform( -10, 0, -4.37114e-07, 0, 18, 0, 8.74228e-07, 0, -5, -99, 0, 47 )
+
+[node name="landblocksmooth18" parent="." instance=ExtResource( 5 )]
+transform = Transform( -5, 0, -8.74228e-07, 0, 18, 0, 4.37114e-07, 0, -10, -89, 0, -18 )
+
+[node name="landblocksmooth19" parent="." instance=ExtResource( 5 )]
+transform = Transform( -5, 0, -8.74228e-07, 0, 18, 0, 4.37114e-07, 0, -10, -89, 0, 19 )
+
+[node name="landblocksmooth20" parent="." instance=ExtResource( 5 )]
+transform = Transform( -5, 0, -8.74228e-07, 0, 18, 0, 4.37114e-07, 0, -10, -89, 0, -54 )
+
+[node name="landblocksmooth21" parent="." instance=ExtResource( 5 )]
+transform = Transform( -10, 0, -4.37114e-07, 0, 18, 0, 8.74228e-07, 0, -5, -61, 0, -64 )
+
+[node name="landblocksmooth22" parent="." instance=ExtResource( 5 )]
+transform = Transform( -2.18557e-07, 0, 10, 0, 18, 0, -5, 0, -4.37114e-07, 13.5, 0, -64.5 )
+
+[node name="landblocksmooth23" parent="." instance=ExtResource( 5 )]
+transform = Transform( -2.18557e-07, 0, 10, 0, 18, 0, -5, 0, -4.37114e-07, -23.5, 0, -64.5 )
+
+[node name="landblocksmooth24" parent="." instance=ExtResource( 5 )]
+transform = Transform( -2.18557e-07, 0, 10, 0, 18, 0, -5, 0, -4.37114e-07, 49.5, 0, -64.5 )
+
+[node name="landblocksmooth25" parent="." instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-07, 0, 5, 0, 18, 0, -10, 0, -2.18557e-07, 59.5, 0, -36.5 )
+
+[node name="landblocksmooth9" parent="." instance=ExtResource( 5 )]
+transform = Transform( 10, 0, 0, 0, 18, 0, 0, 0, 5, -6, 0, 84 )
+
+[node name="landblocksmooth10" parent="." instance=ExtResource( 5 )]
+transform = Transform( 10, 0, 0, 0, 18, 0, 0, 0, 5, -43, 0, 84 )

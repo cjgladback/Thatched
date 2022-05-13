@@ -23,9 +23,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.4 )
 [node name="SpringArm" type="SpringArm" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 0, 0 )
 spring_length = 8.0
-margin = 0.2
+margin = 0.5
 script = ExtResource( 2 )
 
 [node name="Camera" type="Camera" parent="SpringArm"]
 transform = Transform( 1, 0, 0, 0, 0.965926, -0.258819, 0, 0.258819, 0.965926, 0, 0, 7 )
 current = true
+far = 125.0
